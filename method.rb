@@ -35,7 +35,17 @@ sq(2).times{
 }
 
 def change
-  $global = 99  #dollar sign makes a variable a global variable. 
+  $global = 99  #dollar sign makes a variable a global variable.
 end
 change
 puts $global
+
+#Recursiveness
+def factorial(n)
+  if n <= 1   # this is the base case. Without it, loop is infinate. 
+    1
+  else
+    n*factorial(n-1)
+  end
+end
+puts 'factorial is: ' + factorial(6).to_s
