@@ -4,6 +4,7 @@ end
 x= 4
 y= 5
 product(x,y)
+#product(x)  #use first parameter and take second paremeter with the default value
 
 def manyArguments(*p) #any number of arguments
   puts p
@@ -29,6 +30,12 @@ def sq(x)
   x*x
 end
 
-sq(4).times{
+sq(2).times{
   puts "Hi"
 }
+
+def change
+  $global = 99  #dollar sign makes a variable a global variable. 
+end
+change
+puts $global
