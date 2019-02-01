@@ -1,7 +1,7 @@
 p 'jef script'
 
 
-$counter = 0
+$counter = 0  # The '$ symbol declares a global variable. 
 
 def fibonacci(number)
   $counter += 1
