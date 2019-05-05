@@ -25,5 +25,8 @@ puts f
 puts '-----'
 
 #sort a Hash
-myHash = {post1: 15, post2: 20, post3: 5}
+myHash = {'my post1': 15, 'my post2': 20, 'my post3': 5}
 puts myHash.sort_by(&:last)
+
+myHash2 = {post1: 15, post2: 20, post3: 5}
+puts myHash2.sort_by(&:last)
