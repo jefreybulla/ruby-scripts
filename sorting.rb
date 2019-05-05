@@ -27,6 +27,12 @@ puts '-----'
 #sort a Hash
 myHash = {'my post1': 15, 'my post2': 20, 'my post3': 5}
 puts myHash.sort_by(&:last)
+puts '-----'
 
 myHash2 = {post1: 15, post2: 20, post3: 5}
 puts myHash2.sort_by(&:last)
+puts '-----'
+
+#sort multidimensional array
+array = [[15,'B'],[20,'A'],[5,'C']]
+puts array.sort
