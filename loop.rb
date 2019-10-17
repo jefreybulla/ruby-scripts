@@ -4,7 +4,7 @@ puts '------------'
 arr = [10,20,30,40,50]
 counter = 0
 
-arr.each do |i|
+arr.each do |i|           #the iterating variable (i) is called the block parameter
   puts "Value: #{i}"
 end
 
@@ -14,11 +14,23 @@ arr.each do
 end
 puts arr
 
-
+#loop over hashes
 computers = {make:"apple",model:"macbook"}
 computers.each do |key, value|
   puts "#{key} => #{value}"
 end
+#short version
+computers.each {|key, value| puts "#{key} => #{value}"}
+
+puts "--------------"
+
+#iterate over the characters of a string
+s = "Test"
+s.each_char do |i|
+  puts i
+end
+
+puts "--------------"
 
 10.times do
   puts 1
