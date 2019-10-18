@@ -1,4 +1,4 @@
-#Challenge: implement a method that checks for the winner of a tictactoe board
+#Challenge: implement a method that checks if there is a winner on a tictactoe board
 #The status of the board is represented by an array with this format: board=[ "o","x","","","o","x","","","" ]
 
 #The unique positions of the board are [0,1,2,3,4,5,6,7,8]
@@ -25,7 +25,7 @@ def check_result(board)
 
 end
 
-#change the board array to change the boar dstatus and see check_result at work
+#change the board array to change the board dstatus and see check_result at work
 
 board=[ "","","x","","x","","x","o","o" ]
 check_result(board)
