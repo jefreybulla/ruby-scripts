@@ -36,6 +36,11 @@ puts "--------------"
   puts 1
 end
 
+while x >= 1
+  puts "in loop"
+  x = x - 1
+end
+
 var = 0
 until var > 5 do
   puts var

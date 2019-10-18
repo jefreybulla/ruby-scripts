@@ -1,11 +1,10 @@
 ages = {"David"=> 28, "Amy"=> 19, "Rob"=> 56}
 puts ages["Rob"]
 
-#using symbols instead for strings as keys
+#using symbols instead for strings as keys. Symbols are immutable
 user = {:name =>"Dave", :age=>28, :gender=> "male"}
 puts user[:gender]
 
-#Simbols are immutable
 #In other programming languages hashes are called associative arrays or dictionaries.
 
 #shorter way to write hashes:
