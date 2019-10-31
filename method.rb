@@ -61,9 +61,9 @@ puts $global
 #Recursiveness
 def factorial(n)
   if n <= 1   # this is the base case. Without it, loop is infinite.
-    1
+    return 1
   else
-    n*factorial(n-1)
+    return n*factorial(n-1)
   end
 end
 puts 'factorial is: ' + factorial(4).to_s
