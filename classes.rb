@@ -3,7 +3,7 @@
 class Car
   #initialize method initialize the class variables  for a new object.
   #known as the constructor in other programming languages
-  #instance variables (starts with @) have object scope. They are accesible inside all the methods for the object.
+  #instance variables (starts with @) have object scope. They relate to one specific object. They are accesible inside all the methods for the object.
   def initialize(brand)
     @brand = brand
   end
@@ -65,3 +65,26 @@ p1.age = 26
 puts "Name: #{p1.name}, age: #{p1.age}"
 
 puts p1
+
+puts "------------"
+
+#Self keyword is used to access other methods of the class.
+class Machine
+
+  def turn_on
+    self.boot_cpu
+    self.boot_os
+  end
+
+  def boot_cpu
+    puts "booting CPU"
+  end
+
+  def boot_os
+    puts "booting OS"
+  end
+
+end
+
+m1 = Machine.new
+m1.turn_on
