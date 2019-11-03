@@ -88,3 +88,41 @@ end
 
 m1 = Machine.new
 m1.turn_on
+
+#class method are methods that can used without creating instances
+puts "----class methods--------"
+class Noise
+  def self.cat
+    puts "Meow"
+  end
+end
+
+Noise.cat
+
+#class variables are accesible to every object of the class. A class variable belongs to the class, not to the object.
+puts "----class variables-----"
+
+class Table
+  @@counter = 0
+  def initialize
+    @@counter += 1
+  end
+#you can use a class variable to keep track of the number of objects created.
+  def self.get_counter
+    return @@counter
+  end
+end
+
+t1 = Table.new
+t2 = Table.new
+t2 = Table.new
+
+puts "counter: #{Table.get_counter}"
+
+#class constants
+puts "----class constants-----"
+class Calculator
+  PI = 3.14
+end
+
+puts Calculator::PI
