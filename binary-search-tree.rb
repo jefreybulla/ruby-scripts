@@ -46,7 +46,7 @@ def findLargestNode(node)
 end
 
 #findSecondLargestNode method finds the node with the second largest value of the a tree
-#Must pass the top node of the tree as the only parameter. Second and parameters are only use for recursion calls.
+#Must pass the top node of the tree as the only parameter. Second and third parameters are only use for recursion calls.
 def findSecondLargestNode(node,previousNode=nil,firstTime=true)
   if !node.nodeR
     #firstTime flags if the top node has no right child.
