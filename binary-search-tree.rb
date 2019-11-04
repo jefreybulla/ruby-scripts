@@ -13,7 +13,7 @@ class Node
     @nodeR = nodeR
   end
 
-  #Method to print the childre of a node
+  #Method to print the children of a node
   def printChildren
 
     puts "Node with value " + self.value.to_s + " has:"
