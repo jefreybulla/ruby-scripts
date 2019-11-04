@@ -1,6 +1,6 @@
 ##Challenge: find the second largest value on a binary search tree.##
 
-#Node class create instances of node objects.
+#Node class creates instances of node objects.
 class Node
 
   #create getter method to access instance variables
