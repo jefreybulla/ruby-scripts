@@ -68,12 +68,12 @@ puts p1
 
 puts "------------"
 
-#Self keyword is used to access other methods of the class.
+#Access other methods of the class.
 class Machine
 
   def turn_on
-    self.boot_cpu
-    self.boot_os
+    boot_cpu
+    boot_os
   end
 
   def boot_cpu
