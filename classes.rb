@@ -51,7 +51,7 @@ class Person
     @name = name
     @age = age
   end
-  #to_s method helps returning usefull info about the objects when called.
+  #to_s method helps returning useful info about the objects when called.
   def to_s
     return "#{@name} is #{@age} years old"
   end
@@ -107,7 +107,7 @@ class Table
   def initialize
     @@counter += 1
   end
-#you can use a class variable to keep track of the number of objects created.
+  #you can use a class variable to keep track of the number of objects created.
   def self.get_counter
     return @@counter
   end

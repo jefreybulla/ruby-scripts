@@ -1,5 +1,5 @@
 #Animal is a super class. Dog and Cat are subclasses.
-#Subclases inherite methods from superclasses. 
+#Subclases inherite methods from superclasses.
 class Animal
   def initialize(name, color)
     @name = name
@@ -25,4 +25,4 @@ class Cat < Animal
 end
 
 c1 = Cat.new("Agata","black")
-c1.speak
+c1.speak    #"Meow"
