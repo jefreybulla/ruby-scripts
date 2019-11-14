@@ -6,7 +6,7 @@ class Player
     puts "scoring"
   end
 
-  #all methods that come after 'provate' are only accesible inside de the class
+  #all methods that come after 'private' are only accesible inside de the class
   private
   def move
     puts "moving"

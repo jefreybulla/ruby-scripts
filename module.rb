@@ -12,7 +12,7 @@ end
 class Car < Vehicle
 end
 
-#Addin a module to a class is referred as mix in
+#Adding a module to a class is referred as mix in
 #class can mix in multiple modules
 class Jet < Vehicle
   include Flyable
