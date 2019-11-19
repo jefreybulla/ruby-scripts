@@ -21,7 +21,6 @@ def match(n,ar)
   puts pairs
 end
 
-
 n = 9
 ar= [10,20,20,10,10,30,50,10,20]
 match(n,ar)
