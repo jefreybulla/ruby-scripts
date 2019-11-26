@@ -35,10 +35,13 @@ t = temp
 puts t
 
 #Method that returns multile values
+puts "-returning multiple values"
 def squares (a,b)
   return a*a, b*b  #return multiple values
 end
 puts squares(2,3)
+(c,d) = squares(2,3)
+puts "#{c} - #{d}"
 
 def sq(x)
   x*x
