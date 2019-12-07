@@ -1,14 +1,5 @@
 #rotateLeft method takes an array a and the number of rotations d.
 
-z = [1,3,5]
-
-r = ""
-z.each do |e|
-  r += "#{e.to_s} "
-end
-
-puts r
-
 def rotateLeft(a,d)
   result = Array.new(a.length)
   a.each_with_index do |e,i|
