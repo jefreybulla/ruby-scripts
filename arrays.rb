@@ -4,6 +4,13 @@ a = [1,2,3,4];
 a[-1]  # output 4
 a[-2]  # output 3
 
+#create array if a specific size
+myArray = Array.new(3)    #[nil,nil,nil]
+puts myArray.inspect
+#create array if a specific size and default values
+myArray2 = Array.new(4,0)  #[0,0,0,0]
+puts myArray2.inspect
+
 #adding element to array
 a << 5            #[1,2,3,4,5]
 a.push(6)         #[1,2,3,4,5,6]
@@ -38,9 +45,11 @@ print a.reverse   #[5,4,3,2,1]
 print a.reverse!  #modifies a
 print a.reverse!  #back to original
 
+puts "\n"
 #sort elements of array
 d = [9,8,9,6]
-d.sort            #[6,8,9,9]
+dsorted = d.sort            #[6,8,9,9]
+puts dsorted.inspect
 
 #remove duplicates in elements of the array
 d.uniq            #[9,8,6]
