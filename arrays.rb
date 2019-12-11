@@ -75,6 +75,17 @@ puts result   #Great White
 results = sharks.select {|item| item.include?("i")}
 puts results.inspect  #["Great White", "Tiger"]
 
+puts "-join-"
+#convert array to string
+result = sharks.join(" ")
+puts result
+
+puts "---map and join to create outputs---"
+#using map and join to transform an array of data into output
+options = sharks.map {|shark| "<option>#{shark}</option>"}
+output = options.join("\n")
+puts output
+
 puts "---sort_by---"
 #sort an aaray of hashes with sort_by
 sharks = [
