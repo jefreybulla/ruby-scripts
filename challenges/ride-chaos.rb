@@ -2,7 +2,7 @@
 #Any person in the queue can bribe the person directly in front of them to swap positions. If two people swap positions, they still wear the same sticker denoting their original places in line. One person can bribe at most two others. For example, if n=8 and Person 5 bribes Person 4, the queue will look like this: 1,2,3,5,4,6,7,8.
 #Calculate the minimum number of bribes that took place to get the queue into its current state.
 
-#From: https://www.hackerrank.com/challenges/new-year-chaos/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
+#From: https://www.hackerrank.com/challenges/new-year-chaos/problem
 
 def calculateBribes(q)
   bribes = 0
