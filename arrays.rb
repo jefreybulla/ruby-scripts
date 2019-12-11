@@ -75,6 +75,11 @@ puts result   #Great White
 results = sharks.select {|item| item.include?("i")}
 puts results.inspect  #["Great White", "Tiger"]
 
+puts "---index search---"
+#find index of the matched element with index
+result = sharks.index("Great White")
+puts result   #1
+
 puts "-join-"
 #convert array to string
 result = sharks.join(" ")
