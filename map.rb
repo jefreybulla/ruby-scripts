@@ -33,3 +33,5 @@ puts e.inspect
 
 f = ["orange", "apple", "banana"].map(& :class)
 puts f.inspect
+
+#Map has an alias called collect

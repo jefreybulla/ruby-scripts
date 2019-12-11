@@ -61,3 +61,26 @@ d.max             #9
 #size of array
 d.size            #4
 d.length          #4
+
+#finding elements with an exact match
+sharks = ["Hammerhead", "Great White", "Tiger", "Whale"]
+puts sharks.include? "Tiger"   #true
+puts sharks.include? "Sharknado"   #false
+
+#find first element with a partial match
+result = sharks.find {|item| item.include?("t")}
+puts result   #Great White
+
+#find all elements wuth a partial match
+results = sharks.select {|item| item.include?("i")}
+puts results.inspect  #["Great White", "Tiger"]
+
+puts "---sort_by---"
+#sort an aaray of hashes with sort_by
+sharks = [
+  {name: "Hammerhead"},
+  {name: "Great white"},
+  {name: "Angel"}
+]
+sorted_sharks = sharks.sort_by{|shark| shark[:name] }
+puts sorted_sharks.inspect
