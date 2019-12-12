@@ -20,6 +20,15 @@ def rotateChar(s)
   return result.join
 end
 
+def factorial(n)
+  if n <= 1
+    n
+  else
+    n * factorial(n-1)
+  end
+end
+
+#This method works for input of three characters
 def getPermutations(s)
   result = []
   for i in 0..2
@@ -32,6 +41,34 @@ def getPermutations(s)
   return result
 end
 
-s = "abc"
+#The following method work with recursion to solve to inputs of three characters
+def getPermutations2(s,perm=[])
+  substring = s[1..2]
+  perm.push(s[0] + substring)
+  perm.push(s[0] + substring.reverse)
+  if perm.length >= factorial(s.length)
+    return perm
+  else
+    s = rotateChar(s)
+    getPermutations2(s,perm)
+  end
+end
 
-puts getPermutations(s)
+#The following method find all the permutations for an input if four characters
+def getPermutations3(s,perm=[])
+  subresult = getPermutations2(s[1..3])
+  subresult.each do |item|
+    perm.push(item.insert(0,s[0]))
+  end
+  if perm.length >= factorial(s.length)
+    return perm
+  else
+    s = rotateChar(s)
+    getPermutations3(s,perm)
+  end
+end
+
+s = "abcd"
+
+#puts rotateChar(s)
+puts getPermutations3(s)
