@@ -18,3 +18,13 @@ puts user2.values #returns all values
 temp = user2.invert #invert keys and values
 puts temp
 puts temp["female"]
+
+#transform keys from symbol to string 
+h = {k: 'v'}
+h.stringify_keys
+# => {'k' => 'v'}
+#alternative
+h.transform_keys(&:to_s) 
+
+#transform keys from string to symbol
+h.transform_keys!(&:to_sym) 
